@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Example</title>
+</head>
+<body>
+    <!-- 
+    What the Code Does:
+    This script demonstrates the behavior of the `var` keyword in JavaScript. 
+    It shows:
+    1. How variables can be declared and reassigned.
+    2. The scope of variables declared with `var` (function/global scope).
+    3. Why using `var` for redeclaration is not recommended.
+    -->
+
+    <script>
+        // Declaring a variable using 'var'
+        var a = 10;
+        console.log("Value of a before reassignment: " + a); // Output: 10
+
+        // Reassigning the variable
+        a = 200;
+        console.log("Value of a after reassignment: " + a); // Output: 200
+
+        // Variable declared with 'var' is function-scoped or global-scoped
+        {
+            // Declaring another variable using 'var' inside a block
+            var b = 500;
+            console.log("Accessing b inside block: Allowed, value = " + b); // Output: 500
+        }
+
+        // Variable 'b' declared inside the block is still accessible outside
+        console.log("Accessing b outside block: Allowed, value = " + b); // Output: 500
+
+        {
+            // 'b' can still be accessed in a different block
+            console.log("Accessing b inside another block: Allowed, value = " + b); // Output: 500
+        }
+
+        // Note: Redeclaring a variable with 'var' is technically allowed but not a good practice
+        // Example:
+        // var a = 300; // Uncommenting this would work, but avoid redeclaring variables unnecessarily.
+    </script>
+</body>
+</html>
+
+<!-- 
+Summary of Key Concepts:
+1. `var` is function-scoped or globally scoped (not block-scoped).
+2. Variables declared with `var` can be reassigned and accessed outside their block.
+3. Redeclaring variables with `var` is permitted but not recommended due to potential bugs.
+-->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Excepted Output -->
+<!-- Value of a before reassignment: 10
+Value of a after reassignment: 200
+Accessing b inside block: Allowed, value = 500
+Accessing b outside block: Allowed, value = 500
+Accessing b inside another block: Allowed, value = 500 -->
+
