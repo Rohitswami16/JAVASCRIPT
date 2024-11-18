@@ -1,0 +1,33 @@
+<!-- 02-External-Javascript.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JavaScript Example</title>
+
+    <!-- Linking an external JavaScript file named "02external.js" -->
+    <script src="02external.js"></script>
+</head>
+<body>
+    <!-- The body is empty as all functionality is handled in the external JavaScript file -->
+</body>
+</html>
+
+<!-- 
+    Description:
+    This HTML document demonstrates the use of external JavaScript. 
+    The script is linked using the <script> tag with the "src" attribute pointing to "02external.js".
+    
+    Benefits of using external JavaScript:
+    1. Code reusability: The same script can be used across multiple HTML files.
+    2. Improved readability and maintainability by separating HTML and JavaScript logic.
+-->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+ <!-- 02external.js -->
+// Logs a message to the browser console
+console.log("Hello from external JS");
+
+// Performs a simple addition operation and logs the result to the console
+console.log(3 + 3);
