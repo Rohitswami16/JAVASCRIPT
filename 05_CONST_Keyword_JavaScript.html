@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Example</title>
+</head>
+<body>
+    <!-- 
+    Explanation:
+    This script demonstrates the behavior of the `const` keyword in JavaScript:
+    1. `const` is used to declare variables whose values cannot be reassigned.
+    2. Variables declared with `const` are block-scoped, meaning they are accessible only 
+       within the block where they are defined.
+    -->
+
+    <script>
+        // Declaring a constant variable using 'const'
+        const a = 10;
+        console.log("Value of a before reassignment: " + a); // Output: 10
+
+        // Reassignment is NOT allowed for variables declared with 'const'
+        // Uncommenting the line below will throw a TypeError
+        // a = 200;  
+        // console.log("Value of a after reassignment: " + a);
+
+        {
+            // Declaring another constant variable within a block
+            const b = 500;
+            console.log("Accessing b inside block: Allowed, value = " + b); // Output: 500
+        }
+
+        // Accessing 'b' outside its block will cause an error
+        // Uncommenting the line below will throw a ReferenceError
+        // console.log("Accessing b outside block: Not allowed, causes error");
+    </script>
+</body>
+</html>
+
+<!-- 
+Summary:
+1. Variables declared with `const` are block-scoped, so they are accessible only within the block 
+   where they are declared.
+2. `const` variables cannot be reassigned after their initial declaration.
+3. Attempting to access a `const` variable outside its block will result in a ReferenceError.
+-->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+<!-- Excepted Output 
+Value of a before reassignment: 10
+Accessing b inside block: Allowed, value = 500
+TypeError: Assignment to constant variable.
+ReferenceError: b is not defined
+-->
