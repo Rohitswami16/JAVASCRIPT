@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Example</title>
+</head>
+<body>
+    <!-- 
+    1. JavaScript is a dynamically typed language.
+    2. Variables can be declared using the keywords: var, let, or const.
+       The choice of keyword depends on the variable’s scope and whether it needs to be reassigned.
+    -->
+
+    <script>
+        // Declaring a variable using 'let'
+        let a = 10;
+        console.log("Value of a before reassignment: " + a); // Output: 10
+
+        // Reassigning the variable
+        a = 200;
+        console.log("Value of a after reassignment: " + a); // Output: 200
+
+        // Redeclaring a variable with 'let' in the same scope is not allowed
+        // Uncommenting the line below will throw an error
+        // let a = 300;
+
+        // 'let' is block-scoped, meaning it is only accessible within the block where it is declared
+        {
+            let b = 500;
+            console.log("Accessing b inside block: Allowed, value = " + b); // Output: 500
+        }
+
+        // Accessing 'b' outside its block will cause an error
+        // Uncommenting the line below will throw an error
+        // console.log("Accessing b outside block: Not allowed, causes error");
+
+        // Reassigning or reusing 'b' outside its original block will also cause an error
+        // Uncommenting the lines below will throw an error
+        // b = 600;
+        // console.log("Reassigning b outside block: Not allowed, causes error");
+    </script>
+</body>
+</html>
+
+<!-- 
+1. Variables declared using 'let' are block-scoped, meaning they are accessible 
+   only within the block where they are declared.
+2. Variables declared with 'let' can be reassigned to a new value within their scope.
+3. Redeclaring variables with 'let' in the same scope is not allowed.
+-->
