@@ -12,9 +12,9 @@ fun();
 function greet(name) {
     console.log("Welcome to", name);
 } 
-greet("Kodnest");
+greet("Bengaluru");
 // Output:
-// Welcome to Kodnest
+// Welcome to Bengaluru
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
