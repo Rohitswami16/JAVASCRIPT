@@ -1,3 +1,72 @@
+// Define an array and log it
+let arr = [10, 20, 30, 40, 50];
+console.log(arr); 
+// Output: [10, 20, 30, 40, 50]
+// We define an array `arr` with 5 integer elements: 10, 20, 30, 40, and 50. 
+// The `console.log(arr)` statement prints the array to the console.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Add elements to the array using `push()`
+arr.push(66);
+console.log(arr); 
+// Output: [10, 20, 30, 40, 50, 66]
+// `push(66)` adds the value `66` to the end of the array. 
+// The updated array is `[10, 20, 30, 40, 50, 66]` which is printed.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+arr.push(77);
+console.log(arr); 
+// Output: [10, 20, 30, 40, 50, 66, 77]
+//`push(77)` adds `77` to the end of the array. 
+// Now the array becomes `[10, 20, 30, 40, 50, 66, 77]` and is printed.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Add elements to the array using `unshift()`
+arr.unshift(600);
+console.log(arr); 
+// Output: [600, 10, 20, 30, 40, 50, 66, 77]
+// `unshift(600)` adds the value `600` to the beginning of the array. 
+// The updated array is `[600, 10, 20, 30, 40, 50, 66, 77]`, printed to the console.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+arr.unshift(700);
+console.log(arr); 
+// Output: [700, 600, 10, 20, 30, 40, 50, 66, 77]
+// `unshift(700)` adds `700` to the beginning of the array. 
+// The array becomes `[700, 600, 10, 20, 30, 40, 50, 66, 77]` and is logged.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Removing elements from the array using `pop()`
+arr.pop();
+console.log(arr); 
+// Output: [700, 600, 10, 20, 30, 40, 50, 66]
+//`pop()` removes the last element from the array, which is `77`. 
+// The updated array is `[700, 600, 10, 20, 30, 40, 50, 66]`, printed to the console.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+arr.shift();
+console.log(arr); 
+// Output: [600, 10, 20, 30, 40, 50, 66]
+// `shift()` removes the first element of the array, which is `700`. 
+// The array becomes `[600, 10, 20, 30, 40, 50, 66]` after this operation.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Modify an element in the array
+arr[2] = 99;
+console.log(arr); 
+// Output: [600, 10, 99, 30, 40, 50, 66]
+// This line modifies the element at index `2` (the third element). 
+// The original element at index `2` was `20`, but now it is replaced with `99`. 
+// After this modification, the array becomes `[600, 10, 99, 30, 40, 50, 66]` and is printed.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Iterate through the array and replace even numbers with "e" and odd numbers with "o"
 arr = [1, 2, 4, 3, 7, 9, 4, 2, 1];
