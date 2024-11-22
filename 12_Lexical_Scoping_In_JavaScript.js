@@ -74,7 +74,6 @@ console.log("x = " + x);
 // console.log("z = " + z); // Error: `z` is not accessible outside `inner`
 
 
-
 // Expected Output:
 
 // outer() executing
