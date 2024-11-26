@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Example</title>
+</head>
+<body>
+    <!-- Page heading -->
+    <h1 id="h1">Welcome to our website</h1>
+    <!-- A paragraph with descriptive text -->
+    <p id="p1">
+        Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Recusandae, id impedit 
+        officiis nihil hic quae sequi velit ipsum 
+        atque commodi ullam a. Illo eos animi sit 
+        voluptates, modi quos similique.
+    </p>
+    <!-- Buttons to activate dark and light modes -->
+    <button onclick="goDark();">Activate Dark Mode</button>
+    <button onclick="goLight();">Activate Light Mode</button>
+</body>
+<script>
+    // Function to enable dark mode
+    function goDark() {
+        document.body.style.backgroundColor = "black"; // Change background color to black
+        document.getElementById("h1").style.color = "white"; // Change heading text color to white
+        document.getElementById("p1").style.color = "white"; // Change paragraph text color to white
+    }
+
+    // Function to enable light mode
+    function goLight() {
+        document.body.style.backgroundColor = "white"; // Change background color to white
+        document.getElementById("h1").style.color = "black"; // Change heading text color to black
+        document.getElementById("p1").style.color = "black"; // Change paragraph text color to black
+    }
+</script>
+</html>
+
+
