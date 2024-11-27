@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Active Example</title>
+    <style>
+        /* Style for the buttons */
+        button {
+            height: 50px;
+            width: 100px;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Style for the active button */
+        .active {
+            background-color: lawngreen;
+        }
+    </style>
+    <script>
+        /**
+         * Highlights the "JAVA" button and removes the highlight from all others.
+         */
+        function java() {
+            document.querySelector('#java').classList.add('active');  // Add active class to JAVA
+            document.querySelector('#python').classList.remove('active'); // Remove active class from Python
+            document.querySelector('#cpp').classList.remove('active');    // Remove active class from C++
+            document.querySelector('#go').classList.remove('active');     // Remove active class from GO LANG
+        }
+
+        /**
+         * Highlights the "Python" button and removes the highlight from all others.
+         */
+        function python() {
+            document.querySelector('#java').classList.remove('active');   // Remove active class from JAVA
+            document.querySelector('#python').classList.add('active');    // Add active class to Python
+            document.querySelector('#cpp').classList.remove('active');    // Remove active class from C++
+            document.querySelector('#go').classList.remove('active');     // Remove active class from GO LANG
+        }
+
+        /**
+         * Highlights the "C++" button and removes the highlight from all others.
+         */
+        function cpp() {
+            document.querySelector('#java').classList.remove('active');   // Remove active class from JAVA
+            document.querySelector('#python').classList.remove('active'); // Remove active class from Python
+            document.querySelector('#cpp').classList.add('active');       // Add active class to C++
+            document.querySelector('#go').classList.remove('active');     // Remove active class from GO LANG
+        }
+
+        /**
+         * Highlights the "GO LANG" button and removes the highlight from all others.
+         */
+        function go() {
+            document.querySelector('#java').classList.remove('active');   // Remove active class from JAVA
+            document.querySelector('#python').classList.remove('active'); // Remove active class from Python
+            document.querySelector('#cpp').classList.remove('active');    // Remove active class from C++
+            document.querySelector('#go').classList.add('active');        // Add active class to GO LANG
+        }
+    </script>
+</head>
+<body>
+    <!-- Heading for the functionality -->
+    <h1>Language Selection with Active State Highlight</h1>
+    <p>Click on a button to select a programming language. The selected button will be highlighted.</p>
+
+    <!-- Buttons for language selection -->
+    <button id="java" onclick="java()">JAVA</button>
+    <button id="python" onclick="python()">Python</button>
+    <button id="cpp" onclick="cpp()">C++</button>
+    <button id="go" onclick="go()">GO LANG</button>
+</body>
+</html>
