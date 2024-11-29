@@ -101,3 +101,23 @@ function circle(r, op) {
 circle(4, area); // 50.272 (Area)
 circle(4, pri);  // 25.136 (Perimeter)
 circle(4, dia);  // 8 (Diameter)
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Program 5: Closure Demonstration
+// Outer function that returns an inner function
+function outer() {
+    let out = 10; // Variable in the outer function
+    return function inner() { 
+        console.log(out); // Inner function accesses 'out' from closure
+    };
+}
+
+// Call the outer function
+let res = outer(); 
+console.log(res); // Logs the inner function definition
+
+// Call the inner function
+res(); 
+// Output:
+// [Function: inner]
+// 10
