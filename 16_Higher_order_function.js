@@ -13,7 +13,8 @@ function add(a, b, show) {
 
 // Call add with numbers and the display function
 add(10, 20, display); 
-// Output:
+
+// Excepted Output:
 // data 30
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -72,6 +73,12 @@ function calc(a, b, op) {
 
 // Test the calc function with different operations
 calc(10, 20, add); // res: 30
+calc(10, 20, sub); // res: -10
+calc(10, 20, mul); // res: 200
+calc(10, 20, div); // res: 0.5
+
+// Excepted output
+ // res: 30
 calc(10, 20, sub); // res: -10
 calc(10, 20, mul); // res: 200
 calc(10, 20, div); // res: 0.5
