@@ -1,4 +1,4 @@
-// Using Callback Functions
+// Program 1: Using Callback Functions
 
 // Function to display data
 function display(data) {
