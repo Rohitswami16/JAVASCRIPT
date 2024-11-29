@@ -78,10 +78,10 @@ calc(10, 20, mul); // res: 200
 calc(10, 20, div); // res: 0.5
 
 // Excepted output
- // res: 30
-calc(10, 20, sub); // res: -10
-calc(10, 20, mul); // res: 200
-calc(10, 20, div); // res: 0.5
+// res: 30
+// res: -10
+// res: 200
+// res: 0.5
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Program 4: Circle Operations with Callback Functions
@@ -102,6 +102,11 @@ circle(4, area); // 50.272 (Area)
 circle(4, pri);  // 25.136 (Perimeter)
 circle(4, dia);  // 8 (Diameter)
 
+// Excepted output
+// 50.272 (Area)
+// 25.136 (Perimeter)
+// 8 (Diameter)
+
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Program 5: Closure Demonstration
 // Outer function that returns an inner function
@@ -118,6 +123,7 @@ console.log(res); // Logs the inner function definition
 
 // Call the inner function
 res(); 
-// Output:
+
+// Excepted Output:
 // [Function: inner]
 // 10
