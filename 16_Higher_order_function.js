@@ -57,6 +57,7 @@ calc(10, 20, div); // res: 0.5
 // res: 0.5
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Program 3: Calculator with Arrow Functions
 
 // Define basic arithmetic functions using arrow syntax
